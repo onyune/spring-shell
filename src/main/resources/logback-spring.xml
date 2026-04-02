@@ -1,0 +1,35 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_ACCOUNT" class="ch.qos.logback.core.FileAppender">
+        <file>./log/account.log</file>
+        <encoder>
+            <pattern>%date %-5level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+
+    </appender>
+
+    <appender name="FILE_PRICE" class="ch.qos.logback.core.FileAppender">
+        <file>./log/price.log</file>
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.nhnacademy.springshell.aop.AccountAop" level="info" additivity="false">
+        <appender-ref ref="FILE_ACCOUNT"/>
+    </logger>
+
+
+    <logger name="com.nhnacademy.springshell.aop.PriceAop" level="info" additivity="false">
+        <appender-ref ref="FILE_PRICE"/>
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

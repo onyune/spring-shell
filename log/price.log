@@ -1,0 +1,10 @@
+----sando class com.nhnacademy.springshell.command.MyCommands.city([]) ---->
+<------ sando class com.nhnacademy.springshell.command.MyCommands.city([사천시, 정읍시, 청송군, 서산시, 고령군, 나주시, 동두천시, 금산군, 완도군, 양주시, 거제시, 광주시, 함평군, 장흥군, 논산시, 통영시, 진도군, 예천군, 파주시, 고성군, 단양군])------
+----sando class com.nhnacademy.springshell.command.MyCommands.sector([청송군]) ---->
+<------ sando class com.nhnacademy.springshell.command.MyCommands.sector([일반용, 욕탕용, 가정용])------
+----sando class com.nhnacademy.springshell.command.MyCommands.price([청송군, 가정용]) ---->
+<------ sando class com.nhnacademy.springshell.command.MyCommands.price(Price(id=197, city=청송군, sector=가정용, unitPrice=220))------
+----sando class com.nhnacademy.springshell.command.MyCommands.billTotal([청송군, 가정용, 30]) ---->
+<------ sando class com.nhnacademy.springshell.command.MyCommands.billTotal(지자체명: 청송군, 업종: 가정용, 구간금액(원): 220, 총금액(원): 6600)------
+----sando class com.nhnacademy.springshell.command.MyCommands.billTotal([청송군, 가정용, 30]) ---->
+<------ sando class com.nhnacademy.springshell.command.MyCommands.billTotal(지자체명: 청송군, 업종: 가정용, 구간금액(원): 220, 총금액(원): 6600)------
